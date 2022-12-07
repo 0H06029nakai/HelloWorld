@@ -7,9 +7,20 @@
     <title>1-1 はじめてのjavascript</title>
 </head>
 <body>
-    <script>s1=100000
-        s2=40000
-        x1=s2*100/s1
-        alert(x1)</script>
+    <ul>
+        <li>
+            <a href="javascript:engel()">エンゲル係数</a>
+            </a>
+        </li>
+    </ul>
+    <script>
+        function calc(s1, s2) { return s2*100/s1 }
+            function engel(){
+                s1=prompt("消費支出?","")*1
+                s2=prompt("食料費?","")*1
+                x1=calc(s1, s2)
+                alert("エンゲル係数は"+Math.floor(x1)+"です．")
+            }  
+    </script>
 </body>
 </html>
